@@ -12,3 +12,43 @@ body {
   margin: 0;
   background-color: var(--primary-color);
 }
+
+header,
+main,
+footer {
+  padding: var(--spacing);
+}
+
+header {
+  background-color: var(--blue-color);
+  color: white;
+}
+
+header h1 {
+  margin-top: 0;
+  text-transform: uppercase;
+}
+
+main {
+  border: var(--border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--blue-color);
+  text-align: center;
+  font-weight: bold;
+}
+
+footer {
+  background-color: var(--orange-color);
+  color: white;
+}
+
+footer button {
+  margin-top: var(--spacing);
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
