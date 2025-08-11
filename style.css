@@ -61,6 +61,7 @@ footer button {
   background-position: center;
 }
 
+/* Imágenes */
 .school {
   background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/d8ce469044b958508f4bdbab/blueschoolbackpackwithessentialsupplies_232148207678.jpg);
 }
@@ -77,10 +78,11 @@ footer button {
   background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/89993ff69c3e5244ad2bf1ba/blondestudentgirlissmilingholdingfoldernotebookherhandsuniversitybackground_101969664.jpg);
 }
 
+/* GRID LAYOUT DESKTOP */
 body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: 1fr 1fr auto;
   grid-template-areas:
     'header school student'
     'header main time'
@@ -93,25 +95,32 @@ body {
 header {
   grid-area: header;
 }
+
 .school {
   grid-area: school;
 }
+
 .student {
   grid-area: student;
 }
+
 main {
   grid-area: main;
 }
+
 .time {
   grid-area: time;
 }
+
 .alumni {
   grid-area: alumni;
 }
+
 footer {
   grid-area: footer;
 }
 
+/* RESPONSIVE MOBILE */
 @media (max-width: 768px) {
   body {
     grid-template-columns: 1fr;
