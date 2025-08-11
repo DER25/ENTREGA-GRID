@@ -22,6 +22,9 @@ footer {
 header {
   background-color: var(--blue-color);
   color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente */
 }
 
 header h1 {
