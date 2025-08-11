@@ -111,3 +111,17 @@ main {
 footer {
   grid-area: footer;
 }
+
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'school'
+      'student'
+      'main'
+      'time'
+      'alumni'
+      'footer';
+  }
+}
